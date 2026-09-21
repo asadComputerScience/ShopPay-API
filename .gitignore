@@ -1,0 +1,74 @@
+# ============================================================================
+# SECRETS - never commit these
+# ============================================================================
+# (`dotnet user-secrets` stores keys outside the repo, in your user profile, so
+#  they cannot end up here. These entries are a second safety net.)
+secrets.json
+*.secrets.json
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.local.json
+appsettings.Production.json
+*.pfx
+*.p12
+*.pem
+*.key
+
+# ============================================================================
+# DATABASE FILES - the SQLite database is generated at runtime
+# ============================================================================
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+
+# ============================================================================
+# .NET build output
+# ============================================================================
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+publish/
+artifacts/
+*.nupkg
+*.snupkg
+project.lock.json
+.dotnet/
+
+# Test results & coverage
+[Tt]est[Rr]esult*/
+*.trx
+coverage/
+coverage*.json
+coverage*.xml
+coverage*.info
+TestResults/
+
+# Logs
+*.log
+
+# ============================================================================
+# IDEs & OS
+# ============================================================================
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
